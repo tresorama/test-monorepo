@@ -15,8 +15,6 @@
   },
   "devDependencies": {
     "shared-tsconfig": "*",
-    "@types/node": "^16.18.3",
-    "rimraf": "^3.0.2",
     "tsup": "^6.3.0"
   }
 }
