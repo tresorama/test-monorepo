@@ -1,0 +1,22 @@
+{
+  "private": false,
+  "name": "@tresorama-test-lib/save-to-disk",
+  "version": "1.0.0",
+  "author": "Jacopo Marrone",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "compile": "tsup src/index.ts --format cjs --dts",
+    "dev": "yarn compile -- --watch",
+    "build": "yarn clean && yarn compile",
+    "prepack": "yarn build && cp \"./package.json\" ./dist/",
+    "clean": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "shared-tsconfig": "*",
+    "@types/node": "^16.18.3",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.3.0"
+  }
+}
