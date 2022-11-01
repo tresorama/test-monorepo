@@ -1,10 +1,15 @@
 # Test Monorepo
 
-Tool used in this branch: **PNPM**
+Tool used in this branch: **YARN V3 WORKSPACES**
+
+**Considerations or difficulties**  
+Difficult to work in dev mode:
+- how to properly setup that `app` depends on `package`s rebuild in watch mode ?
+
+## What's included as workspaces ?
 
 Workspaces are all subdirectory of `packages` and `apps`.
 
-## What's included as package ?
 
 - `@tresorama-test-lib/generate-text-permutation`
 - `@tresorama-test-lib/save-to-disk`
