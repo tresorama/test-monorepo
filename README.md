@@ -2,9 +2,13 @@
 
 Tool used in this branch: **PNPM**
 
-Workspaces are all subdirectory of `packages` and `apps`.
+**Considerations or difficulties**  
+All as expected.  
+Create-react-app doesn't install properly with pnpm, but could be a react bug, not an pnpm one.
 
-## What's included as package ?
+## What's included as workspaces ?
+
+Workspaces are all subdirectory of `packages` and `apps`.
 
 - `@tresorama-test-lib/generate-text-permutation`
 - `@tresorama-test-lib/save-to-disk`
