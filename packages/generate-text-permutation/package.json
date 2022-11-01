@@ -1,0 +1,21 @@
+{
+  "private": false,
+  "name": "@tresorama-test-lib/generate-text-permutation",
+  "version": "1.0.0",
+  "author": "Jacopo Marrone",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts",
+    "dev": "npm run build -- --watch",
+    "clean": "rimraf ./dist"
+  },
+  "devDependencies": {
+    "shared-tsconfig": "workspace:*",
+    "@types/node": "^16.18.3",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.3.0",
+    "typescript": "^4.8.4"
+  }
+}
